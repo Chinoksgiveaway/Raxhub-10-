@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rax Product Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #000000, #4b0000);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(255, 0, 0, 1);
+      }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff4d4d;
+      margin-top: 20px;
+      text-shadow: 0 0 15px #ff0000, 0 0 30px #aa0000;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      color: #ffcccc;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #ff2e2e;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px #ff0000, 0 0 40px #aa0000;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff0000, 0 0 60px #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="https://cdn.discordapp.com/attachments/1359944336946630767/1360766824056094750/waadwawdawd.png?ex=67fc505c&is=67fafedc&hm=f638b920d38376ffdf5441cbeee995ca00993ecbe33ebccc5926d36f2c160aec&" alt="Product Design">
+    </div>
+    <h1>Rax Exclusive Product</h1>
+    <p>Get undetected Valorant cheats featuring aim assist, wallhacks, unlock all and more. Dominate your games safely and efficiently.</p>
+    <a class="button" href="#">Learn More</a>
+  </div>
+</body>
+</html>
